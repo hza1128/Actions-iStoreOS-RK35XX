@@ -1,4 +1,4 @@
-name: Build iStore OS
+name: arms-istoreos
 
 on:
   repository_dispatch:
@@ -31,10 +31,10 @@ jobs:
       matrix:
         REPO_BRANCH:
           # - main
-          - istoreos-22.03
-          - istoreos-23.05
+          # - istoreos-22.03
+          - istoreos-24.10
         ARCHITECTURE:
-          - rk35xx
+          - arms
         os:
           - ubuntu-22.04
 
